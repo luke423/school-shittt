@@ -1,4 +1,4 @@
-## About ExtPrint3r
+## this is a fork of extprinter to work for me
 
 ExtPrint3r is an exploit created by [Blobby Boi](https://github.com/Blobby-Boi/) with the goal of being the successor to ExtHang3r. The exploit recreates the behavior of the LTMEAT Print method by flooding iframes and then printing the page. For whatever reason, printing a page with a ton of iframes hangs the embedded page rather than the host page. This is exactly what ExtPrint3r exploits, since it also works with extension pages (as long they are under web_accessible_resources). This seems to be much more consistent than other extension-freezing methods, and it also lasts for a longer period of time. Just like ExtHang3r, this would not have been possible withuot [ading2110](https://github.com/ading2210/)'s original Dextensify, go check it out!
 
