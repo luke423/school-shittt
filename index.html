@@ -648,16 +648,15 @@
 	async function createExtensionButtons() {
    	    let hasSupportedExtensions = false;
 
-    	    for (const [name, url] of Object.entries(extensions)) {
-                const success = await TryAddExtension(name, icons[name], url);
-                if (success) hasSupportedExtensions = true;
-    	    }
-
-    	    if (!hasSupportedExtensions) {
+	    if (!hasSupportedExtensions) {
                 extContainer.innerHTML = "<p style='margin-left: 15px; font-size: 12px;'>No supported extensions installed :(</p>";
     	    }
 	}
 	
+
+    	  
+
+
     	const iframeCountEl = document.querySelector("#iframe-count")
     	iframeCountEl.addEventListener("input", ()=>{
             document.querySelector("#iframe-count-display").textContent = iframeCountEl.value
